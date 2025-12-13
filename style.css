@@ -1,0 +1,21 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: rgb(119, 60, 14);
+}
+
+.grid-container {
+    width: 500px;
+    height: 500px;
+    display: grid;
+}
+
+.pixel-art {
+    border: 1px solid #070707;
+    background: #fff;
+    border-radius: 10px;
+}
