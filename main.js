@@ -8,6 +8,7 @@ let widthValue = document.getElementById("width-value");
 let colorBtn = document.getElementById("color-selection");
 let eraseBtn = document.getElementById("erase");
 let paintBtn = document.getElementById("paint");
+let saveBtn = document.getElementById("save");
 
 
 let color = "#000";
@@ -57,6 +58,19 @@ removeGrid.onclick = () => {
 paintBtn.onclick = () => {
     color = colorBtn.value;
 }
+
+saveBtn.onclick = () => {
+    let savePixels = document.querySelectorAll(".pixel-art");
+    let colors = [];
+
+    for (let i = 0; i < savePixels.length; i++) {
+        colors.push(savePixels[i].style.backgroundColor);
+    }
+
+    localStorage.setItem("pixelDesign", JSON.stringify(colors));
+    alert("Design saved!");
+};
+
 
 // createGrid.onclick = () => {
 //     container.innerHTML = "";
