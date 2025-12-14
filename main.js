@@ -59,17 +59,45 @@ paintBtn.onclick = () => {
     color = colorBtn.value;
 }
 
+
 saveBtn.onclick = () => {
-    let savePixels = document.querySelectorAll(".pixel-art");
-    let colors = [];
+    let pixelArt = document.querySelector(".pixel-art");
+    let pixelArray = [];
 
-    for (let i = 0; i < savePixels.length; i++) {
-        colors.push(savePixels[i].style.backgroundColor);
-    }
-
-    localStorage.setItem("pixelDesign", JSON.stringify(colors));
+    pixelArray.push(pixelArt);
+    localStorage.setItem("savedPixels", JSON.stringify(pixelArray));
     alert("Design saved!");
-};
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// saveBtn.onclick = () => {
+//     let savePixels = document.querySelectorAll(".pixel-art");
+//     let colors = [];
+
+//     for (let i = 0; i < savePixels.length; i++) {
+//         colors.push(savePixels[i].style.backgroundColor);
+//     }
+
+//     localStorage.setItem("pixelDesign", JSON.stringify(colors));
+//     alert("Design saved!");
+// };
 
 
 // createGrid.onclick = () => {
