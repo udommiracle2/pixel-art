@@ -64,10 +64,12 @@ saveBtn.onclick = () => {
     let pixelArt = document.querySelector(".pixel-art");
     let pixelArray = [];
 
-    pixelArray.push(pixelArt);
+    for (x = 0; x < pixelArt; x++) {
+        pixelArray.push(pixelArt);
+    }
+
     localStorage.setItem("savedPixels", JSON.stringify(pixelArray));
     alert("Design saved!");
-
 
 }
 
