@@ -64,7 +64,7 @@ saveBtn.onclick = () => {
     let pixelArt = document.querySelector(".pixel-art");
     let pixelArray = [];
 
-    for (x = 0; x < pixelArt; x++) {
+    for (x = 0; x < pixelArt.length; x++) {
         pixelArray.push(pixelArt);
     }
 
